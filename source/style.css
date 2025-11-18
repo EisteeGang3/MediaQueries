@@ -4,10 +4,42 @@ html,body{
     background-color: green;
 }
 
+
+
+
+
+
+
+/*Aufgabe 2*/
+
+.landscape{
+    display: none;
+}
+
+.portrait{
+    display: none;
+}
+@media (orientation: landscape) {
+  .landscape {
+    display: block;
+  }
+}
+
+@media (orientation: portrait) {
+  .portrait{
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+/*Aufgabe 1*/
 /*Sichtbarkeit grundlegend ausschalten*/
-
-
-
 .extrasmall{
     display: none;
 }
@@ -99,4 +131,57 @@ html,body{
     .extraextralarge{
         display: block;
     }
+}
+
+
+
+
+/*Aufgabe 3*/
+@media print{
+    body {
+        background: white;   /* Hintergründe entfernen */
+        color: black;
+    }
+    .small, .extrasmall, .medium, .img, .landscape, .portrait{
+        display: none;
+    }
+    .large{
+        display: block;
+    }
+    img{
+        display: none;
+    }
+}
+
+
+
+
+/*Aufgabe 4*/
+
+.container {
+    display: grid;
+    gap: 10px;
+}
+
+.container {
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.box {
+    background: lightblue;
+    padding: 20px;
+    border: 1px solid #aaa;
+    text-align: center;
 }

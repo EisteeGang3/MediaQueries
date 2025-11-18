@@ -17,13 +17,47 @@ Media Queries Crash Kurs
 |'git pull'| Daten vom Remote Repo ziehen|
 
 
+
+
+
 ### Media Queries im CSS
 ```css
 @media (Bedingung) {
 
 }
-
 ```
+
+### Typische Bedingungen
+|Bedingungen|Bedeutung|
+|---|---|
+|'max-width'|Stile gelten bis zu dieser Größe|
+|'min-width'|Stile gelten ab dieser Größe|
+|'orientation'| Bildschirmausirhctung 'landscape' oder 'portrait'|
+|'screen'|Für Bildschirme gültig|
+|'print'|Für Drucker gültig|
+
+
+## Aufgaben
+
+### 1. Breakpoints nach Bootstrap
+
+setze die breakpoints nach Bootstrap so um, das die jeweilige Bildschirmgröße ausgegben wird und die BackgroundFarbe wechselt. (siehe ganz unten)
+
+### 2. Horizontal, Vertikal
+
+Zeige an, ob der Bildschrim Querformat oder Hochformat ist.
+
+### 3. Ausdrucken
+
+Wenn die Seite ausgedruckt wird, soll der 'large'-Inhalte ausgegeben werden und das Aussehen angepasst werden:
+
+- Hintergrund Weiss
+- Schriftfarbe Schwarz
+- Bilder weg
+
+
+
+
 ### Beispiel HintergrundFarbe ändern
 ```css
 html,body{
